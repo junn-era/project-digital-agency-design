@@ -1,0 +1,60 @@
+.section_banner {
+  height: 100vh;
+  display: flex;
+}
+
+.section_banner div:nth-child(1) {
+  width: 50%;
+  background-image: url('../../../../public/banner.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+
+.imageBackground_light_mode {
+  background-color: #fff;
+}
+
+.imageBackground_dark_mode {
+  background-color: #252525;
+}
+
+.text_sectionBanner {
+  width: 50%;
+  padding: 0 1.25rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fafbfc;
+}
+
+.text_sectionBanner p {
+  color: #022144;
+  font-size: 0.75rem;
+  letter-spacing: 0.25rem;
+  font-weight: 500;
+}
+
+.text_sectionBanner h2 {
+  color: #022144;
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.section_banner span {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #022144;
+}
+
+@media (max-width: 768px) {
+  .section_banner div::nth-child(1) {
+    display: none;
+  }
+
+  .text_sectionBanner {
+    width: 100%;
+  }
+}

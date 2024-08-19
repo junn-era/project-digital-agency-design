@@ -1,0 +1,53 @@
+.card_light_mode {
+  flex: 1 1 18.75rem;
+  padding: 4.25rem 1.75rem;
+  border: 1px solid #edecec;
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.card_dark_mode {
+  flex: 1 1 18.75rem;
+  padding: 4.25rem 1.75rem;
+  border: 1px solid #ffffff0d;
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.card_light_mode:hover,
+.card_dark_mode:hover {
+  background-color: #feb633;
+  color: #000000 !important;
+  transition: all 1s;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.container h3 {
+  font-size: 1.5rem;
+}
+
+.card_dark_mode h3 {
+  color: #fff;
+}
+
+.container small {
+  font-style: italic;
+}
+
+.card_light_mode p,
+.card_dark_mode p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
